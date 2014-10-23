@@ -89,6 +89,7 @@ class Rover
 	end
 end
 
+#Rover 1
 puts "What point along 'x' would you like to being?"
 x_point = gets.chomp.to_i
 
@@ -105,8 +106,22 @@ rover1 = Rover.new(x_point, y_point, dir_point, move_point)
 
 puts "Rover 1 is at (#{rover1.x}, #{rover1.y}) : #{rover1.direction}"
 
+#Rover 2
+puts "What point along 'x' would you like to being?"
+x_point2 = gets.chomp.to_i
 
+puts "What point along 'y' would you like to being?"
+y_point2 = gets.chomp.to_i
 
+puts "Which direction would you like to face?(N/E/S/W)"
+dir_point2 = gets.chomp.upcase.to_s
+
+puts "Where would you like to go? (Input 'M' to move forward, 'L' to rotate left, 'R' to rotate right)"
+move_point2 = gets.chomp.upcase.split(//)
+
+rover2 = Rover.new(x_point2, y_point2, dir_point2, move_point2)
+
+puts "Rover 2 is at (#{rover1.x}, #{rover1.y}) : #{rover1.direction}"
 
 
 
